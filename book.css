@@ -1,0 +1,377 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*---- header ----*/
+header{
+    background-color: rgb(134, 88, 63);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(241, 242, 229);
+    font-size: 3em;
+    width: 700;
+    text-transform: uppercase;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(241, 242, 229);
+    font-size: 2.5em ;
+    width: 500;
+    padding-left: 35px;
+}
+.navigation a:hover{
+    color: rgb(207, 175, 127);
+}
+.btn{
+
+    background-color: rgb(83, 125, 143) ;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+    text-align: center;
+    
+}
+.btn:hover{
+
+    background-color:  rgb(39, 189, 187);
+    transform: scale(1.1);
+}
+
+/*---- main ----*/
+section{
+    padding: 100px 200px;
+}
+.main{
+width: 100%;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color:rgb(241, 242, 229);
+
+}
+.main h2{
+    color: rgb(134, 88, 63);
+    font-size: 2.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(83, 125, 143);
+    font-size: 4em;
+    font-weight: 600;
+
+}
+.main h3{
+    color: rgb(134, 88, 63);
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(83, 125, 143) ;
+    font-size: 2em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+.main-btn:hover{
+    background-color:rgb(39, 189, 187);
+    transform: scale(1.1);
+}
+.social-icons a i{
+    color:rgb(134, 88, 63);
+    font-size: 3em;
+    padding-right:70px;
+    transition: 0.4s; 
+}
+.social-icons a i:hover{
+    color: rgb(207, 175, 127);
+    transform: scale(1.1); 
+}
+.containet-imges{
+    max-width: 100%;
+    padding: 50px 0;
+
+}
+
+/*----- Categories ------*/
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(207, 175, 127);
+    font-size: 4em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+
+.categories-icon{
+    margin-top: 3.5rem;
+}
+.contaent{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: rgba(241, 242, 229, 0.4);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    border-radius: 100px;
+    padding: 40px;
+    transition: 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+  font-size: 10em ;
+}
+.inf{
+    text-align: center;
+}
+.inf h3{
+    color: rgb(134, 88, 63);
+    font-size: 3em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* -----img slider------*/
+
+    .slider img{
+        width:1900px;
+        height:1500px;
+           }
+    .slider nav{
+        width: 1900px;
+        margin:auto;
+        overflow: hidden;
+               }
+   .slider ul{
+        list-style: none;
+        width: 15000px;
+        position: relative;
+        padding:0;
+        animation: sliding 4s ease-in-out infinite;
+    }
+   .slider li{
+        position:relative;
+        float:left;
+    }
+    
+    @keyframes sliding{
+        0%{left:0px;}
+        30%{left:-300px;}
+        50%{left:-600px;}
+        75%{left:-900px;}
+        100%{left:-1200px;}
+    }
+    .slider ul:hover{
+        animation-play-state:paused;
+    }
+
+
+/*---- about us ----*/
+.about-us{
+width: 100%;
+min-height: 20vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color:rgb(241, 242, 229);
+
+
+}
+.about-us h2{
+    color: rgb(207, 175, 127);
+    font-size: 4.5em;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.about-us p{
+    color: rgb(134, 88, 63);
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.containet-imges{
+    max-width: 100%;
+    padding: 50px 0;
+    
+}
+
+/*---- comments ----*/
+
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    margin: 40px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+}
+.testimonial .col-3 img{
+    width: 130px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+font-size: 40px;
+color: rgb(39, 189, 187);
+}
+.col-3 p{
+    font-size: 35px;
+    margin: 12px 0;
+    color:  #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 30px;
+}
+
+/*---- footer -----*/
+
+.footer{
+    background-color: rgb(83, 125, 143);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 2.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:  rgb(39, 189, 187);
+}
+.footer .social-icons a{
+ font-size: 1.3em;
+ padding: 0 12px 0 0;
+}
+
+
+/*---------- booklogin ----------*/
+#login{
+    padding: 0;
+    margin: 0;
+    background: url(img/bb.jpeg);
+    background-size: cover;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 350px;
+    height: 420px;
+    background: rgba(250, 244, 244, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0 ,.1);
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+}
+form img{
+    position: absolute;
+    top: -50px;
+    left: 118px;
+}
+form h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 99px;
+}
+input[type="text"],[type="password"]{
+
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-bottom: 2px solid rgb(134, 88, 63);
+    background: none;
+    padding: 5px;
+    color: #fff;
+
+}
+input[type="text"]{
+    top: 140px;
+    left: 50px;
+}
+input[type="password"]{
+    top: 210px;
+    left: 50px;
+}
+::placeholder{
+    color: #fff;
+}
+input[value="login"]{
+position: absolute;
+top: 305px;
+left: 110px;
+width: 130px;
+height: 35px;
+background: rgb(134, 88, 63);
+border: none;
+outline: none;
+color: #fff;
+border-radius: 5px;
+font-size: 20px;
+}
+input[value="login"]:hover{
+    background: rgb(83, 125, 143);
+}
+form p{
+    position: absolute;
+    top: 360px;
+    left: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: small;
+}
+form p:hover{
+    color: rgb(207, 175, 127);
+}
